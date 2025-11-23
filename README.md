@@ -1,6 +1,6 @@
 # MultiLoader Template
 
-This project provides a Gradle project template that can compile Minecraft mods for multiple modloaders using a common project for the sources. This project does not require any third party libraries or dependencies. If you have any questions or want to discuss the project, please join our [Discord](https://discord.myceliummod.network).
+This project provides a Gradle project template that can compile Minecraft mods for multiple modloaders using a common project for the sources. This project does not require any third party libraries or dependencies. This template is a fork of the [MultiLoader-Template by jaredlll08](https://github.com/jaredlll08/MultiLoader-Template) adjusted to include extra boilerplate to save time with service creation.
 
 ## Getting Started
 
