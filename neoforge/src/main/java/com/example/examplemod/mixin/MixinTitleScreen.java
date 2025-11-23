@@ -1,6 +1,6 @@
 package com.example.examplemod.mixin;
 
-import com.example.examplemod.Constants;
+import com.example.examplemod.common.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

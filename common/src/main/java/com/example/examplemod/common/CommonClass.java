@@ -1,5 +1,6 @@
-package com.example.examplemod;
+package com.example.examplemod.common;
 
+import com.example.examplemod.common.init.*;
 import com.example.examplemod.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
@@ -27,5 +28,11 @@ public class CommonClass {
 
             Constants.LOG.info("Hello to examplemod");
         }
+
+        ModItems.load();
+        ModBlocks.load();
+        ModComponents.load();
+        ModPackets.load();
+        ModAttachments.load();
     }
 }

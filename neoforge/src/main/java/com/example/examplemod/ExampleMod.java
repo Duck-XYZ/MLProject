@@ -1,6 +1,10 @@
 package com.example.examplemod;
 
 
+import com.example.examplemod.common.CommonClass;
+import com.example.examplemod.common.Constants;
+import com.example.examplemod.platform.services.NeoNetworkHelper;
+import com.example.examplemod.platform.services.NeoRegistryHelper;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
@@ -17,5 +21,7 @@ public class ExampleMod {
         Constants.LOG.info("Hello NeoForge world!");
         CommonClass.init();
 
+        eventBus.addListener(NeoNetworkHelper::registerPackets);
+        NeoRegistryHelper.REGISTRIES.registerAll(eventBus);
     }
 }
